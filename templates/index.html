@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebCam</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- links allow the project to use the latest versions of the mentioned libraries directly from their official sources on the web -->
+
+</head>
+
+<body>
+<!-- As a link -->
+<nav class="navbar navbar-light bg-success">
+  <a class="navbar-brand" href="http://127.0.0.1:3000/templates/upload.html">FACE RECOGNITION ATTENDANCE SYSTEM</a>
+</nav>
+<br>
+ <div class="mx-auto" style="width: 700px;">
+  <img src="{{ url_for('video_feed') }}">
+</div>
+
+<br><br>
+<div class="mx-auto" style="width: 150px;">
+  <a href="http://127.0.0.1:5000/">
+   <button type="button" class="btn btn-success">Return</button>
+</a>
+</div>
+</body>
+</html>
